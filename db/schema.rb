@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 2021_03_15_084053) do
     t.string "content"
     t.bigint "room_id"
     t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["room_id"], name: "index_messages_on_room_id"
     t.index ["user_id"], name: "index_messages_on_user_id"
   end
